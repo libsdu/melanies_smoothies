@@ -43,5 +43,9 @@ if time_to_insert:
     
     st.success(f'✅Your Smoothie is ordered, {name_on_order}!')
 
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
+
 
 
